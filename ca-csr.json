@@ -1,5 +1,5 @@
 {
-    "CN": "etcd CA",
+    "CN": "kubernetes",
     "key": {
         "algo": "rsa",
         "size": 2048
@@ -8,7 +8,9 @@
         {
             "C": "CN",
             "L": "Shenzhen",
-            "ST": "Shenzhen"
+            "ST": "Shenzhen",
+            "O": "k8s",
+            "OU": "System"
         }
     ]
 }

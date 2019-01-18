@@ -1,7 +1,14 @@
 {
-    "CN": "etcd",
+    "CN": "kubernetes",
     "hosts": [
-    "172.16.0.28"
+      "10.0.0.1",
+      "127.0.0.1",
+      "172.16.0.28",
+      "kubernetes",
+      "kubernetes.default",
+      "kubernetes.default.svc",
+      "kubernetes.default.svc.cluster",
+      "kubernetes.default.svc.cluster.local"
     ],
     "key": {
         "algo": "rsa",
@@ -11,7 +18,9 @@
         {
             "C": "CN",
             "L": "Shenzhen",
-            "ST": "Shenzhen"
+            "ST": "Shenzhen",
+            "O": "k8s",
+            "OU": "System"
         }
     ]
 }
