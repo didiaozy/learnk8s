@@ -1,0 +1,5 @@
+KUBE_PROXY_OPTS="--logtostderr=true \
+--v=4 \
+--hostname-override=172.16.0.28 \
+--cluster-cidr=10.0.0.0/24 \
+--kubeconfig=/k8s/kubernetes/cfg/kube-proxy.kubeconfig"
