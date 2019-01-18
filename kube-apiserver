@@ -12,7 +12,7 @@ KUBE_APISERVER_OPTS="--logtostderr=true \
 --token-auth-file=/k8s/kubernetes/cfg/token.csv \
 --service-node-port-range=30000-50000 \
 --tls-cert-file=/k8s/kubernetes/ssl/server.pem  \
---tls-private-key-file=/opt/kubernetes/ssl/server-key.pem \
+--tls-private-key-file=/k8s/kubernetes/ssl/server-key.pem \
 --client-ca-file=/k8s/kubernetes/ssl/ca.pem \
 --service-account-key-file=/k8s/kubernetes/ssl/ca-key.pem \
 --etcd-cafile=/k8s/etcd/ssl/ca.pem \
