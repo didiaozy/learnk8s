@@ -1,6 +1,6 @@
 # 创建kubelet bootstrapping kubeconfig 
 BOOTSTRAP_TOKEN=2366a641f656a0a025abb4aabda4511b
-KUBE_APISERVER="https://172.16.8.100:6443"
+KUBE_APISERVER="https://172.16.0.28:6443"
 # 设置集群参数
 kubectl config set-cluster kubernetes \
   --certificate-authority=./ca.pem \
