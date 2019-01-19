@@ -45,25 +45,3 @@ kubectl config set-context default \
 
 kubectl config use-context default --kubeconfig=kube-proxy.kubeconfig
 
-#----------------------
-
-# 创建kubelet kubeconfig文件
-
-kubectl config set-cluster kubernetes \
-  --certificate-authority=./ca.pem \
-  --embed-certs=true \
-  --server=${KUBE_APISERVER} \
-  --kubeconfig=kubelet.kubeconfig
-
-kubectl config set-credentials kubelet \
-  --client-certificate=./kubelet.crt \
-  --client-key=./kubelet.key \
-  --embed-certs=true \
-  --kubeconfig=kubelet.kubeconfig
-
-kubectl config set-context default \
-  --cluster=kubernetes \
-  --user=kubelet \
-  --kubeconfig=kubelet.kubeconfig
-
-kubectl config use-context default --kubeconfig=kubelet.kubeconfig
