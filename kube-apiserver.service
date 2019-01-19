@@ -3,6 +3,7 @@ Description=Kubernetes API Server
 Documentation=https://github.com/kubernetes/kubernetes
 
 [Service]
+EnvironmentFile=-/k8s/kubernetes/cfg/config
 EnvironmentFile=-/k8s/kubernetes/cfg/kube-apiserver
 ExecStart=/k8s/kubernetes/bin/kube-apiserver $KUBE_APISERVER_OPTS
 Restart=on-failure
