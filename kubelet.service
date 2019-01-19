@@ -4,7 +4,6 @@ After=docker.service
 Requires=docker.service
 
 [Service]
-EnvironmentFile=-/k8s/kubernetes/cfg/config
 EnvironmentFile=-/k8s/kubernetes/cfg/kubelet
 ExecStart=/k8s/kubernetes/bin/kubelet $KUBELET_OPTS
 Restart=on-failure
